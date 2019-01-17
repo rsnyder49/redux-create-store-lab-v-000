@@ -11,12 +11,12 @@ export default function createStore(reducer) {
     render();
   }
 
-  dispatch({ type: '@@INIT' })
+  dispatch({ type: '@@INIT' });
 
   return {
     getState,
     dispatch
-  }
+  };
 }
 
 function render() {
